@@ -36,8 +36,39 @@ npx hardhat init
 
 ![image](https://github.com/DCVglobalnetwork/Hardhat-Test/assets/105791829/51a10388-57d6-40b8-863e-a85867bf0f03)
 
+## Usage
+
+```shell
+npm install --save-dev @nomicfoundation/hardhat-toolbox
+```
+
+Add the highlighted line to your hardhat.config.js so that it looks like this:
+
+```shell
+require("@nomicfoundation/hardhat-toolbox");
+
+/** @type import('hardhat/config').HardhatUserConfig */
+module.exports = {
+  solidity: "0.8.24",
+};
+```
+1. Compiling contract
+```shell
+npx hardhat compile
+```
+
+![Screenshot 2024-05-27 105953](https://github.com/DCVglobalnetwork/Hardhat-Test/assets/105791829/b9bdeabd-5c58-4fdc-af04-c14bae071b5f)
 
 
+3. Testing contract
+```shell
+npx hardhat test
+```
+
+![Screenshot 2024-05-27 112138](https://github.com/DCVglobalnetwork/Hardhat-Test/assets/105791829/e05b6494-1aa0-4b4b-a275-2717d8846d64)
+
+
+   
 
 ###  Contributing
 Guidelines for how other developers can contribute to your project.
